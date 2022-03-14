@@ -6,6 +6,7 @@ TARGET_PREBUILT_KERNEL := device/google/raviole-kernel/Image.lz4
 
 # Libraries required for vendor
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.authsecret@1.0.vendor \
     android.hardware.biometrics.fingerprint-V1-ndk_platform.vendor \
     android.hardware.bluetooth@1.1.vendor \
@@ -51,6 +52,7 @@ PRODUCT_PACKAGES += \
     libnos_client_citadel:64 \
     libnos_datagram:64 \
     libnos_datagram_citadel:64 \
+    libsensorndkbridge \
     libsfplugin_ccodec_utils.vendor \
     libtinycompress \
     libtrusty_metrics \
@@ -58,7 +60,8 @@ PRODUCT_PACKAGES += \
     nos_app_avb:64 \
     nos_app_identity:64 \
     nos_app_keymaster:64 \
-    nos_app_weaver:64
+    nos_app_weaver:64 \
+    sensors.dynamic_sensor_hal
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
