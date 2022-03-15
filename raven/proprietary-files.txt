@@ -1244,7 +1244,6 @@ vendor/etc/UWB-calibration-ru.conf
 vendor/etc/UWB-calibration-sb.conf
 vendor/etc/UWB-calibration-tj.conf
 vendor/etc/UWB-calibration-tm.conf
-vendor/etc/UWB-calibration-tw.conf
 vendor/etc/UWB-calibration-ua.conf
 vendor/etc/UWB-calibration-unknown.conf
 vendor/etc/UWB-calibration-uz.conf
