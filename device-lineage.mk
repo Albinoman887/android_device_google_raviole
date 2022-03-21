@@ -77,7 +77,7 @@ PRODUCT_PACKAGES += \
     Iwlan
 
 # Parts
-$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+#$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 
 # Touch
 include hardware/google/pixel/touch/device.mk
