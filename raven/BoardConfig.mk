@@ -27,3 +27,5 @@ else
   -include vendor/google_devices/raven/proprietary/BoardConfigVendor.mk
  include device/google/raviole/raven/BoardConfigLineage.mk
 endif
+
+TARGET_SUPPORTS_QUICK_TAP := true
