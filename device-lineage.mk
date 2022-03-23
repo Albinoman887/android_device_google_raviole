@@ -77,7 +77,7 @@ PRODUCT_PACKAGES += \
     Iwlan
 
 # Parts
-#$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 
 # Touch
 include hardware/google/pixel/touch/device.mk
@@ -88,5 +88,11 @@ persist.sys.disable_rescue=true
 
 # Vendor Properties
 TARGET_VENDOR_PROP := device/google/raviole/vendor.prop
+
+# Quick-tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# UDFPS
+TARGET_HAS_UDFPS := true
 
 
