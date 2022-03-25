@@ -28,13 +28,13 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(USES_DEVICE_GOOGLE_RAVIOLE),true)
   include $(call first-makefiles-under,$(LOCAL_PATH))
 
-HBM_JNI_LIBS := libhbmsvmanager_jni.so
-HBM_JNI_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT)/priv-app/HbmSVManager/lib/arm64/,$(notdir $(HBM_JNI_LIBS)))
-$(HBM_JNI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "HbmSVManager lib link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /system_ext/lib64/$(notdir $@) $@
+#HBM_JNI_LIBS := libhbmsvmanager_jni.so
+#HBM_JNI_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT)/priv-app/HbmSVManager/lib/arm64/,$(notdir $(HBM_JNI_LIBS)))
+#$(HBM_JNI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+#	@echo "HbmSVManager lib link: $@"
+#	@mkdir -p $(dir $@)
+#	@rm -rf $@
+#	$(hide) ln -sf /system_ext/lib64/$(notdir $@) $@
 
 DM_LIBS := libdmengine.so libdmjavaplugin.so
 DM_SYMLINKS := $(addprefix $(TARGET_OUT_PRODUCT)/priv-app/DMService/lib/arm/,$(notdir $(DM_LIBS)))
@@ -52,5 +52,5 @@ $(PWRSTATS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf /system_ext/lib64/$(notdir $@) $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(HBM_JNI_SYMLINKS) $(DM_SYMLINKS) $(PWRSTATS_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(DM_SYMLINKS) $(PWRSTATS_SYMLINKS)
 endif
