@@ -69,6 +69,11 @@ PRODUCT_COPY_FILES += \
     device/google/raviole/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-p.xml \
     device/google/raviole/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
 
+ # AiAi Config
+PRODUCT_COPY_FILES += \
+     device/google/raviole/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
+ 
+
 # Powershare
 include hardware/google/pixel/powershare/device.mk
 

@@ -1,5 +1,8 @@
 # Extracted from raven-user 12 SP2A.220305.013.A3 8229987 release-keys
 
+# AiAi Config
++product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
+
 # Ambient music
 product/etc/ambient/matcher_tah.leveldb
 
