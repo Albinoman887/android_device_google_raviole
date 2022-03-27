@@ -116,5 +116,19 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/app/FlipendoPrebuilt/FlipendoPrebuilt.apk \
     system/app/GoogleExtShared/GoogleExtShared.apk \
     system/etc/permissions/privapp-permissions-google.xml \
-    system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk
+    system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk \
+    system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
+    system/priv-app/NetworkPermissionConfigGoogle/NetworkPermissionConfigGoogle.apk \
+    system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk \
+    system/priv-app/TagGoogle/TagGoogle.apk \
+system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk \
+system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk \
+system/lib/libRSSupport.so \
+system/lib/libblasV8.so \
+system/lib/librsjni.so \
+system/lib64/libRSSupport.so \
+system/lib64/libblasV8.so \
+system/lib64/librsjni.so
+
+
 
