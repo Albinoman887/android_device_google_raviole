@@ -35,6 +35,9 @@
         <item>org.microg.nlp.backend.ichnaea</item>
     </string-array>
 
+    <!-- Keep this in sync with vendor/calyx -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.google.euiccpixel</string>
+
    <string-array name="config_locationProviderPackageNames" translatable="false">
         <!-- The standard AOSP fused location provider -->
         <item>com.android.location.fused</item>
