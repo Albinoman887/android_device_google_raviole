@@ -9,6 +9,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven.mk)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 
 include device/google/gs101/lineage_common.mk
 include device/google/raviole/device-lineage.mk
