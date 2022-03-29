@@ -19,7 +19,7 @@ vendor/bin/hw/android.hardware.weaver@1.0-service.citadel
 vendor/bin/hw/citadel_updater
 vendor/bin/hw/citadeld
 vendor/bin/hw/google.hardware.media.c2@1.0-service
-vendor/bin/hw/hardware.qorvo.uwb-service
+-vendor/bin/hw/hardware.qorvo.uwb-service
 vendor/bin/hw/init_citadel
 vendor/bin/hw/rild_exynos
 vendor/bin/hw/samsung.hardware.media.c2@1.0-service
@@ -39,7 +39,7 @@ vendor/bin/securedpud.slider
 vendor/bin/sscoredump
 vendor/bin/trusty_metricsd
 vendor/bin/twoshay
-vendor/bin/uci_daemon
+-vendor/bin/uci_daemon
 vendor/bin/usf_stats
 vendor/bin/wfc-pkt-router
 vendor/etc/UWB-calibration-am.conf
