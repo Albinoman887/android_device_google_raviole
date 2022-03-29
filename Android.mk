@@ -28,13 +28,29 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(USES_DEVICE_GOOGLE_RAVIOLE),true)
   include $(call first-makefiles-under,$(LOCAL_PATH))
 
-HBM_LIBS := libhbmsvmanager_jni.so
-HBM_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT)/priv-app/HbmSVManager/lib/arm64/,$(notdir $(IMS_LIBS)))
-$(HBM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "HBM lib link: $@"
+HBM_JNI_LIBS := libhbmsvmanager_jni.so
+HBM_JNI_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT)/priv-app/HbmSVManager/lib/arm64/,$(notdir $(HBM_JNI_LIBS)))
+$(HBM_JNI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "HbmSVManager lib link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /system_ext/lib64/$(notdir $@) $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(HBM_SYMLINKS)
+DM_LIBS := libdmengine.so libdmjavaplugin.so
+DM_SYMLINKS := $(addprefix $(TARGET_OUT_PRODUCT)/priv-app/DMService/lib/arm/,$(notdir $(DM_LIBS)))
+$(DM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "DMService lib link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /product/lib/$(notdir $@) $@
+
+PWRSTATS_LIBS := libpowerstatshaldataprovider.so
+PWRSTATS_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT)/priv-app/TurboAdapter/lib/arm64/,$(notdir $(PWRSTATS_LIBS)))
+$(PWRSTATS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "powerstats lib link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /system_ext/lib64/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(HBM_JNI_SYMLINKS) $(DM_SYMLINKS) $(PWRSTATS_SYMLINKS)
 endif
