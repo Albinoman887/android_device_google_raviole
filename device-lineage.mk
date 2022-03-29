@@ -35,6 +35,9 @@ DEVICE_MANIFEST_FILE += \
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Telephony
 PRODUCT_COPY_FILES += \
     device/google/raviole/conf/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
