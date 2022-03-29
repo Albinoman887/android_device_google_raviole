@@ -45,6 +45,9 @@ PRODUCT_COPY_FILES += \
 # Touch
 include hardware/google/pixel/touch/device.mk
 
+# UDFPS
+TARGET_HAS_UDFPS := true
+
 # Build necessary packages for vendor
 
 # Bluetooth
