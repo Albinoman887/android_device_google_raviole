@@ -62,6 +62,11 @@ vendor/etc/UWB-calibration-ua.conf
 vendor/etc/UWB-calibration-unknown.conf
 vendor/etc/UWB-calibration-uz.conf
 vendor/etc/UWB-calibration.conf
+vendor/etc/aoc/BLUETOOTH.dat
+vendor/etc/aoc/HANDSET.dat
+vendor/etc/aoc/HANDSFREE.dat
+vendor/etc/aoc/HEADSET.dat
+vendor/etc/aoc/recording.gatf
 vendor/etc/atc_profile.json
 vendor/etc/bluetooth/bt_vendor.conf
 vendor/etc/calib_paths
@@ -172,6 +177,7 @@ vendor/etc/init/android.hardware.secure_element@1.2-uicc-service.rc
 vendor/etc/init/android.hardware.security.keymint-service.citadel.rc
 vendor/etc/init/android.hardware.weaver@1.0-service.citadel.rc
 vendor/etc/init/aocd.rc
+vendor/etc/init/hw/init.aoc.rc
 vendor/etc/init/bipchmgr.rc
 vendor/etc/init/cbd.rc
 vendor/etc/init/chre_daemon.rc
