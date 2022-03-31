@@ -299,7 +299,7 @@ system_ext/priv-app/OemRilService/OemRilService.apk
 # UWB
 system_ext/etc/permissions/privapp-permissions-qorvo.xml
 system_ext/framework/hardware.qorvo.uwb-V1-java.jar
-system_ext/priv-app/UwbService/UwbService.apk;PRESIGNED
+-system_ext/priv-app/UwbService/UwbService.apk;PRESIGNED
 
 # VZW
 system_ext/etc/permissions/com.verizon.llkagent.xml
