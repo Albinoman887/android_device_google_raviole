@@ -33,16 +33,20 @@ DEVICE_MANIFEST_FILE += \
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
-# Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
-
 # Touch
 include hardware/google/pixel/touch/device.mk
+
+# Ambient Music - Now Playing
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay
 
 # Camera
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 PRODUCT_PACKAGES += \
     GoogleCamera
+
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # UDFPS
 TARGET_HAS_UDFPS := true
