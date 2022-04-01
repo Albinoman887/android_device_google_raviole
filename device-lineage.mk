@@ -20,6 +20,11 @@ TARGET_SUPPORTS_QUICK_TAP := true
 # Touch
 include hardware/google/pixel/touch/device.mk
 
+# Camera
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
 # UDFPS
 TARGET_HAS_UDFPS := true
 
