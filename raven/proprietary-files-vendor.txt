@@ -19,7 +19,7 @@ vendor/bin/hw/android.hardware.weaver@1.0-service.citadel
 vendor/bin/hw/citadel_updater
 vendor/bin/hw/citadeld
 vendor/bin/hw/google.hardware.media.c2@1.0-service
-vendor/bin/hw/hardware.qorvo.uwb-service
+-vendor/bin/hw/hardware.qorvo.uwb-service
 vendor/bin/hw/init_citadel
 vendor/bin/hw/rild_exynos
 vendor/bin/hw/samsung.hardware.media.c2@1.0-service
@@ -39,7 +39,7 @@ vendor/bin/securedpud.slider
 vendor/bin/sscoredump
 vendor/bin/trusty_metricsd
 vendor/bin/twoshay
-vendor/bin/uci_daemon
+-vendor/bin/uci_daemon
 vendor/bin/usf_stats
 vendor/bin/wfc-pkt-router
 vendor/etc/UWB-calibration-am.conf
@@ -976,7 +976,7 @@ vendor/lib/libgpudataproducer.so
 vendor/lib/libmahalcontroller.so
 vendor/lib/libmetrics_logger.so
 vendor/lib/liboemservice.so
-vendor/lib/libqorvo_uwb_params_nfcc.so
+-vendor/lib/libqorvo_uwb_params_nfcc.so
 vendor/lib/libril_gfeature.so
 vendor/lib/libril_sitril.so
 vendor/lib/libsensorsuez.so
@@ -1024,7 +1024,7 @@ vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/fp_utils.so
 vendor/lib64/google_wifi_firmware_config_info_cc_proto.so
 vendor/lib64/google_wifi_firmware_config_version_c_wrapper.so
-vendor/lib64/hardware.qorvo.uwb-V1-ndk_platform.so
+-vendor/lib64/hardware.qorvo.uwb-V1-ndk_platform.so
 vendor/lib64/hw/audio.platform.aoc.so
 vendor/lib64/hw/audio.primary.gs101.so
 vendor/lib64/hw/sound_trigger.primary.gs101.so
@@ -1076,7 +1076,7 @@ vendor/lib64/libmodem_svc_proto.so
 vendor/lib64/libnos_citadeld_proxy.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/liboemservice.so
-vendor/lib64/libqorvo_uwb_params_nfcc.so
+-vendor/lib64/libqorvo_uwb_params_nfcc.so
 vendor/lib64/libril_gfeature.so
 vendor/lib64/libril_sitril.so
 vendor/lib64/librtxproto.so
