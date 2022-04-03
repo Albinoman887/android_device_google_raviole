@@ -39,6 +39,11 @@ vendor/bin/trusty_metricsd
 vendor/bin/twoshay
 vendor/bin/usf_stats
 vendor/bin/wfc-pkt-router
+vendor/etc/aoc/BLUETOOTH.dat
+vendor/etc/aoc/HANDSET.dat
+vendor/etc/aoc/HANDSFREE.dat
+vendor/etc/aoc/HEADSET.dat
+vendor/etc/aoc/recording.gatf
 vendor/etc/atc_profile.json
 vendor/etc/bluetooth/bt_vendor.conf
 vendor/etc/chre/activity.napp_header
@@ -153,6 +158,7 @@ vendor/etc/init/citadeld.rc
 vendor/etc/init/dmd.rc
 vendor/etc/init/fingerprint-goodix.rc
 vendor/etc/init/google.hardware.media.c2@1.0-service.rc
+vendor/etc/init/hw/init.aoc.rc
 vendor/etc/init/init.modem_logging_control.rc
 vendor/etc/init/init.sscoredump.rc
 vendor/etc/init/init.usf.rc
