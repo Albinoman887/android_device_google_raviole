@@ -2,9 +2,9 @@
 
 # product partition
 
-# AiAi
-product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
-product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk;PRESIGNED
+# AiAi - Disabled for CrDroid
+#product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
+#product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk;PRESIGNED
 
 # Audio
 product/etc/ambient/matcher_tah.leveldb
