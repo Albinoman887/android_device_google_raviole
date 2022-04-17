@@ -8,8 +8,8 @@ DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-lineage
 #include hardware/google/pixel/touch/device.mk
 
 # Ambient Music - Now Playing
-PRODUCT_PACKAGES += \
-    NowPlayingOverlay
+#PRODUCT_PACKAGES += \
+#    NowPlayingOverlay
 
 # Camera
 #PRODUCT_PACKAGES += \

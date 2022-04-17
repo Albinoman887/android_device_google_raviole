@@ -3,7 +3,7 @@ TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 
 # Inherit some common StatiX stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven_64.mk)
@@ -14,7 +14,7 @@ WITH_GMS := true
 include device/google/gs101/lineage_common.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_raven
+PRODUCT_NAME := dot_raven
 PRODUCT_MODEL := Pixel 6 Pro
 PRODUCT_BRAND := google
 
