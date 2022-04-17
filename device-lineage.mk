@@ -2,18 +2,18 @@
 DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-lineage
 
 # PowerShare
-include hardware/google/pixel/powershare/device.mk
+#include hardware/google/pixel/powershare/device.mk
 
 # Touch
-include hardware/google/pixel/touch/device.mk
+#include hardware/google/pixel/touch/device.mk
 
 # Ambient Music - Now Playing
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 
 # Camera
-PRODUCT_PACKAGES += \
-    GoogleCamera
+#PRODUCT_PACKAGES += \
+#    GoogleCamera
 
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -22,8 +22,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # EUICC
 PRODUCT_PACKAGES += \
-    EuiccSupportPixelOverlay \
-    GoogleParts
+    EuiccSupportPixelOverlay
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
