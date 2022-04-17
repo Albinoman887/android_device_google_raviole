@@ -1,5 +1,5 @@
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-dot
 
 # PowerShare
 #include hardware/google/pixel/powershare/device.mk

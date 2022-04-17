@@ -2,17 +2,19 @@
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/statix/config/common_full_phone.mk)
+# Inherit some common Dot stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_oriole_64.mk)
 $(call inherit-product, device/google/raviole/device-lineage.mk)
+$(call inherit-product, vendor/gms/products/gms.mk)
+WITH_GMS:= true
 
 include device/google/gs101/lineage_common.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_oriole
+PRODUCT_NAME := dot_oriole
 PRODUCT_MODEL := Pixel 6
 PRODUCT_BRAND := google
 

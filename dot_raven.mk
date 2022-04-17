@@ -2,7 +2,7 @@
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common StatiX stuff.
+# Inherit some common DotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit device configuration
@@ -11,7 +11,7 @@ $(call inherit-product, device/google/raviole/device-lineage.mk)
 $(call inherit-product, vendor/gms/products/gms.mk)
 WITH_GMS := true
 
-include device/google/gs101/lineage_common.mk
+include device/google/gs101/lineage-common.mk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := dot_raven
