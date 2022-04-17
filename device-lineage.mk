@@ -18,6 +18,9 @@ PRODUCT_PACKAGES += \
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Touch
 include hardware/google/pixel/touch/device.mk
 
