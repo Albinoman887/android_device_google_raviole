@@ -33,6 +33,10 @@ persist.columbus.use_ap_sensor=false
 # UDFPS
 TARGET_HAS_UDFPS := true
 
+# Rescue Party disable
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.disable_rescue=true
+
 # Artifact path requirement allowlist
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/permissions/android.hardware.biometrics.face.xml \
