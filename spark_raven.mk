@@ -3,18 +3,19 @@ TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 
 # Inherit some common DotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/raviole/aosp_raven_64.mk)
 $(call inherit-product, device/google/raviole/device-dot.mk)
 $(call inherit-product, vendor/gms/products/gms.mk)
 WITH_GMS := true
+WITH_GAPPS := true
 
 include device/google/gs101/dot-common.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := dot_raven
+PRODUCT_NAME := spark_raven
 PRODUCT_MODEL := Pixel 6 Pro
 PRODUCT_BRAND := google
 

@@ -4,12 +4,9 @@ DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-dot
 # PowerShare
 #include hardware/google/pixel/powershare/device.mk
 
-# Touch
-#include hardware/google/pixel/touch/device.mk
-
 # Ambient Music - Now Playing
-#PRODUCT_PACKAGES += \
-#    NowPlayingOverlay
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay
 
 # Camera
 #PRODUCT_PACKAGES += \
@@ -67,7 +64,49 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/lib/librsjni.so \
     system/lib64/libRSSupport.so \
     system/lib64/libblasV8.so \
-    system/lib64/librsjni.so
+    system/lib64/librsjni.so \
+system/addon.d/50-lineage.sh \
+system/app/NfcNci/NfcNci.apk \
+system/app/NfcNci/lib/arm64/libnfc_nci_jni.so \
+system/app/googleconf/googleconf.apk \
+system/app/wellbeingconf/wellbeingconf.apk \
+system/bin/backuptool_ab.functions \
+system/bin/backuptool_ab.sh \
+system/bin/backuptool_postinstall.sh \
+system/bin/curl \
+system/bin/getcap \
+system/bin/procmem \
+system/bin/scp \
+system/bin/setcap \
+system/bin/sftp \
+system/bin/ssh \
+system/bin/ssh-keygen \
+system/bin/sshd \
+system/bin/start-ssh \
+system/etc/hosts.spark_adblock \
+system/etc/init/lineage-ssh.rc \
+system/etc/init/lineage-system.rc \
+system/etc/init/lineage-updates.rc \
+system/etc/libnfc-nci.conf \
+system/etc/permissions/android.software.nfc.beam.xml \
+system/etc/permissions/android.software.sip.voip.xml \
+system/etc/permissions/privapp-permissions-org.pixelexperience.faceunlock.xml \
+system/etc/permissions/privapp-permissions-spark.xml \
+system/etc/sensitive_pn.xml \
+system/etc/ssh/sshd_config \
+system/etc/sysconfig/backup.xml \
+system/etc/sysconfig/hiddenapi-whitelist-org.pixelexperience.faceunlock.xml \
+system/lib/libsepol.so \
+system/lib64/android.hardware.nfc@1.0.so \
+system/lib64/android.hardware.nfc@1.1.so \
+system/lib64/android.hardware.nfc@1.2.so \
+system/lib64/libnfc-nci.so \
+system/lib64/libnfc_nci_jni.so \
+system/lib64/libsepol.so \
+system/lib64/libssh.so \
+system/priv-app/GoogleExtServices/GoogleExtServices.apk \
+system/usr/keylayout/Vendor_045e_Product_0719.kl
+
 
 # Libraries required for vendor
 PRODUCT_PACKAGES += \
