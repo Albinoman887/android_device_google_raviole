@@ -22,8 +22,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # EUICC
 PRODUCT_PACKAGES += \
-    EuiccSupportPixelOverlay \
-    GoogleParts
+    EuiccSupportPixelOverlay
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
