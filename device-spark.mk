@@ -6,13 +6,6 @@ PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
     NowPlayingOverlay
 
-# ADB
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.adb.secure=0 \
-    persist.sys.usb.config=mtp,adb \
-    persist.service.debuggable=1 \
-    persist.service.adb.enable=1
-
 # artifacts
 $(call inherit-product, device/google/raviole/artifacts.mk)
 
