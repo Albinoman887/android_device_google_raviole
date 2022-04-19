@@ -4,14 +4,6 @@ DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-dot
 # PowerShare
 #include hardware/google/pixel/powershare/device.mk
 
-# Permissions
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.control_privapp_permissions=log \
-    ro.adb.secure=0 \
-    persist.sys.usb.config=mtp,adb \
-    persist.service.debuggable=1 \
-    persist.service.adb.enable=1
-
 # Ambient Music - Now Playing
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
