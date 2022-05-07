@@ -6,6 +6,10 @@ PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
     NowPlayingOverlay
 
+# TEMP
+PRODUCT_PACKAGES += \
+    GmsCompat
+
 # ADB
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.adb.secure=0 \
