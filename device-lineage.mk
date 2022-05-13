@@ -13,7 +13,8 @@ include hardware/google/pixel/touch/device.mk
 # RRO Overlays
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
-    NowPlayingOverlay
+    NowPlayingOverlay \
+    PixelFrameworksOverlay
 
 # Camera
 PRODUCT_PACKAGES += \
