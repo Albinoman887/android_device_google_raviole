@@ -21,6 +21,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
+# GMS
+WITH_GMS := true
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+
 # Properties - system
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.disable_rescue=true
