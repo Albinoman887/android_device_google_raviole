@@ -1,6 +1,9 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-lineage
 
+# Artifact Path requirements allow list
+include device/google/raviole/artifacts.mk
+
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
@@ -35,40 +38,6 @@ TARGET_HAS_UDFPS := true
 # Rescue Party disable
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.disable_rescue=true
-
-# Artifact path requirement allowlist
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/etc/permissions/android.hardware.biometrics.face.xml \
-    system/etc/permissions/privapp-permissions-com.crdroid.faceunlock.xml \
-    system/etc/sysconfig/hiddenapi-whitelist-com.crdroid.faceunlock.xml \
-    system/lib64/faceunlock_vendor_dependencies.so \
-    system/lib64/libFaceDetectCA.so \
-    system/lib64/libMegviiUnlock-jni-1.2.so \
-    system/lib64/libMegviiUnlock.so \
-    system/lib64/libarcsoft-lib.so \
-    system/lib64/libarcsoft_faceid.so \
-    system/lib64/libarcsoftbase.so \
-    system/lib64/libmegface.so \
-    system/lib64/libmpbase.so \
-    system/priv-app/FaceUnlockService/FaceUnlockService.apk \
-    system/addon.d/70-velvet.sh \
-    system/app/FlipendoPrebuilt/FlipendoPrebuilt.apk \
-    system/app/GoogleExtShared/GoogleExtShared.apk \
-    system/etc/permissions/privapp-permissions-google.xml \
-    system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk \
-    system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
-    system/priv-app/NetworkPermissionConfigGoogle/NetworkPermissionConfigGoogle.apk \
-    system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk \
-    system/priv-app/TagGoogle/TagGoogle.apk \
-    system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk \
-    system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk \
-    system/lib/libRSSupport.so \
-    system/lib/libblasV8.so \
-    system/lib/librsjni.so \
-    system/lib64/libRSSupport.so \
-    system/lib64/libblasV8.so \
-    system/lib64/librsjni.so
-
 # Libraries required for vendor
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor:64 \
