@@ -10,8 +10,9 @@ include hardware/google/pixel/powershare/device.mk
 # Touch
 include hardware/google/pixel/touch/device.mk
 
-# Ambient Music - Now Playing
+# RRO Overlays
 PRODUCT_PACKAGES += \
+    EuiccSupportPixelOverlay \
     NowPlayingOverlay
 
 # Camera
@@ -19,13 +20,15 @@ PRODUCT_PACKAGES += \
     GoogleCamera
 
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
+# Properties - system
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.disable_rescue=true
+
+# Properties - product
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
     ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
-
-# EUICC
-PRODUCT_PACKAGES += \
-    EuiccSupportPixelOverlay
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -35,9 +38,6 @@ persist.columbus.use_ap_sensor=false
 # UDFPS
 TARGET_HAS_UDFPS := true
 
-# Rescue Party disable
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.disable_rescue=true
 # Libraries required for vendor
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor:64 \
