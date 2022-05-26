@@ -1,5 +1,5 @@
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-spark
+DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-lineage
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
@@ -10,7 +10,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/google/raviole/artifacts.mk)
 
 # GMS
-WITH_GAPPS := true
+WITH_GMS := true
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 
 # Properties - system
@@ -19,7 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Propperties - product
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
     ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
 
