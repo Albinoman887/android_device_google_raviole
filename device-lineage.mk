@@ -13,6 +13,9 @@ $(call inherit-product, device/google/raviole/artifacts.mk)
 WITH_GMS := true
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 
+# Powershare HAL
+include hardware/google/pixel/powershare/device.mk
+
 # Properties - system
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.disable_rescue=true
@@ -26,6 +29,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 TARGET_SUPPORTS_QUICK_TAP := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.columbus.use_ap_sensor=false
+
+# Touch
+include hardware/google/pixel/touch/device.mk
 
 # UDFPS
 TARGET_HAS_UDFPS := true
@@ -95,10 +101,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.singlereg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.singlereg.xml
-
-# Powershare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.gs101
 
 # Telephony
 PRODUCT_PACKAGES += \
