@@ -1,17 +1,27 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-lineage
 
-# RRO Overlays
+# Additional RRO Overlays
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
-    NowPlayingOverlay
+    NowPlayingOverlay \ 
+    PixelFrameworksOverlay
 
 # artifacts
 $(call inherit-product, device/google/raviole/artifacts.mk)
 
+# Camera
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
 # GMS
 WITH_GMS := true
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+
+# parts
+PRODUCT_PACKAGES += \
+    GoogleParts
 
 # Powershare HAL
 include hardware/google/pixel/powershare/device.mk
