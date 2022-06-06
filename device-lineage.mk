@@ -4,7 +4,7 @@ DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-lineage
 # Additional RRO Overlays
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
-    NowPlayingOverlay \ 
+    NowPlayingOverlay \
     PixelFrameworksOverlay
 
 # artifacts
