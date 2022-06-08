@@ -25,14 +25,15 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Whether device supports increased touch sensitvity -->
-    <bool name="config_supportGloveMode">true</bool>
+    <!-- Exempt ImsService from privacy (location) indicators -->
+    <string name="config_systemTelephonyPackage" translatable="false">com.shannon.imsservice</string>
 
-<!-- The properties of a UDFPS sensor in pixels -->
-    <integer-array name="config_udfps_sensor_props">
-      <item>720</item>  <!-- sensorLocationX -->
-      <item>2364</item> <!-- sensorLocationY -->
-      <item>142</item>  <!-- sensorRadius -->
-    </integer-array>
+    <!-- List of comma separated package names for which we the system will not show crash, ANR,
+         etc. dialogs. -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.android.systemui,com.google.android.euicc,com.google.euiccpixel</string>
+
+<!-- Recents text and image selection for Pixel Launcher (not supported by Launcher3) -->
+    <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.
+as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
 </resources>
