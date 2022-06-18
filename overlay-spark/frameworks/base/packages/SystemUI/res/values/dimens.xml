@@ -17,5 +17,5 @@
 -->
 <resources>
     <!-- With the large clock, move up slightly from the center -->
-    <dimen name="keyguard_large_clock_top_margin">-152dp</dimen>
+    <dimen name="keyguard_large_clock_top_margin">-2dp</dimen>
 </resources>
