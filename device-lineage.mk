@@ -144,3 +144,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.5.vendor:64 \
     android.hardware.wifi@1.6.vendor:64 \
     com.google.hardware.pixel.display-V4-ndk.vendor
+
+# Gapps
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+WITH_GAPPS := true
