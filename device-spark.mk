@@ -20,4 +20,5 @@ persist.columbus.use_ap_sensor=false
 
 # UDFPS
 TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
 
