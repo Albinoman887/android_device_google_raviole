@@ -1,3 +1,6 @@
+# includes
+$(call inherit-product, device/google/raviole/artifacts.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-spark
 
