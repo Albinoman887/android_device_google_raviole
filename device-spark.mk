@@ -8,3 +8,5 @@ WITH_GAPPS := true
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# UDFPS
+TARGET_HAS_UDFPS := true
