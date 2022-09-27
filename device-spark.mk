@@ -11,6 +11,8 @@ WITH_GAPPS := true
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+persist.columbus.use_ap_sensor=false
 
 # UDFPS
 TARGET_HAS_UDFPS := true
