@@ -22,6 +22,7 @@ else
   TARGET_SCREEN_DENSITY := 560
   USES_DEVICE_GOOGLE_RAVIOLE := true
 
+  include device/google/raviole/BoardConfigSpark.mk
   include device/google/gs101/BoardConfig-common.mk
   include device/google/gs101/wifi/BoardConfig-wifi.mk
   -include vendor/google_devices/gs101/prebuilts/BoardConfigVendor.mk
