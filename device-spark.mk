@@ -9,6 +9,10 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 WITH_GAPPS := true
 
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.disable_rescue=true
+
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -16,3 +20,4 @@ persist.columbus.use_ap_sensor=false
 
 # UDFPS
 TARGET_HAS_UDFPS := true
+
