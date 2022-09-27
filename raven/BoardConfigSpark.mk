@@ -6,4 +6,4 @@
 
 include device/google/raviole/BoardConfigSpark.mk
 
-include vendor/google/raven/BoardConfigVendor.mk
+#include vendor/google/raven/BoardConfigVendor.mk

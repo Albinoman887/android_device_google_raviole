@@ -117,4 +117,4 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.spark.maintainer.username=Albinoman887
 
 # Vendor Properties
-TARGET_VENDOR_PROP := device/google/raviole/vendor.prop
+#TARGET_VENDOR_PROP := device/google/raviole/vendor.prop
