@@ -35,7 +35,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_whitefin_64.mk \
     $(LOCAL_DIR)/factory_whitefin.mk \
     $(LOCAL_DIR)/statix_oriole.mk \
-    $(LOCAL_DIR)/statix_raven.mk
+    $(LOCAL_DIR)/spark_raven.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_slider-userdebug \
@@ -43,4 +43,4 @@ COMMON_LUNCH_CHOICES := \
     aosp_oriole-userdebug \
     aosp_raven-userdebug \
     statix_oriole-userdebug \
-    statix_raven-userdebug
+    spark_raven-userdebug
