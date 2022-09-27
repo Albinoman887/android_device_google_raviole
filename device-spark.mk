@@ -5,6 +5,13 @@ DEVICE_PACKAGE_OVERLAYS += device/google/raviole/overlay-spark
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 
+# ADB
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.adb.secure=0 \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.debuggable=1 \
+    persist.service.adb.enable=1
+
 # Gapps
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 WITH_GAPPS := true
