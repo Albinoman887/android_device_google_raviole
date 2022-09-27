@@ -43,4 +43,4 @@ COMMON_LUNCH_CHOICES := \
     aosp_oriole-userdebug \
     aosp_raven-userdebug \
     statix_oriole-userdebug \
-    statix_raven-userdebug
+    spark_raven-userdebug
